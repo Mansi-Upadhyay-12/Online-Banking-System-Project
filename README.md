@@ -28,3 +28,16 @@ The Online Banking System is a secure and user-friendly platform that allows use
 
 ### Version Control:
 - Git & GitHub
+- ## Setup Instructions
+
+### 1. Prerequisites
+Before you begin, make sure you have the following installed:
+- **Java Development Kit (JDK)**
+- **MySQL** (for database)
+- **Apache Tomcat** (for running Servlets and JSP)
+- **IDE** (e.g., Eclipse, IntelliJ IDEA, or Visual Studio Code)
+
+### 2. Clone the Repository
+Clone the repository to your local machine using Git:
+```bash
+git clone https://github.com/Mansi-Upadhyay-12/Online-Banking-System-Project.git
