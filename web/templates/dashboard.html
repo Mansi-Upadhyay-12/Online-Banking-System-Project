@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, <span id="user-name">Charlie Doe</span>!</h1>
+            <p>Your Account ID: <span id="account-id">12345</span></p>
+        </header>
+        
+        <div class="account-actions">
+            <div class="action-card">
+                <h2>Deposit Funds</h2>
+                <input type="number" id="deposit-amount" placeholder="Enter amount to deposit" class="input-field">
+                <button class="action-btn" onclick="handleDeposit()">Deposit</button>
+            </div>
+
+            <div class="action-card">
+                <h2>Withdraw Funds</h2>
+                <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw" class="input-field">
+                <button class="action-btn" onclick="handleWithdraw()">Withdraw</button>
+            </div>
+
+            <div class="action-card">
+                <h2>Account Balance</h2>
+                <p id="balance">Current Balance: $0.00</p>
+                <button class="action-btn" onclick="checkBalance()">Check Balance</button>
+            </div>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
