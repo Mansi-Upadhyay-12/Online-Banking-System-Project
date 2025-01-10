@@ -41,3 +41,41 @@ Before you begin, make sure you have the following installed:
 Clone the repository to your local machine using Git:
 ```bash
 git clone https://github.com/Mansi-Upadhyay-12/Online-Banking-System-Project.git
+```
+2. **Set Up MySQL Database:**
+   - Install and start MySQL.
+   - Create a new database for the project:
+     ```sql
+     CREATE DATABASE online_banking_system;
+     ```
+   - Import any provided SQL files to create the required tables (users, accounts, transactions).
+
+3. **Import Project into Your IDE:**
+   - Open your Java IDE (e.g., IntelliJ IDEA, Eclipse).
+   - Import the project as a **Maven Project**.
+
+4. **Configure MySQL Connection:**
+   - Find and update the database connection details (username, password, database URL) in the project's configuration files.
+
+5. **Build the Project:**
+   - Open a terminal in the project directory and run:
+     ```bash
+     mvn clean install
+     ```
+
+6. **Run the Application:**
+   - To start the application, run the following command:
+     ```bash
+     mvn tomcat9:run
+     ```
+   - Access the application in your browser at `http://localhost:8080/online_banking`.
+
+---
+## 3. Unit Testing
+
+Unit tests are used to check if different parts of the application work correctly. This project uses **JUnit** for testing.
+
+### Running Unit Tests:
+- To run the tests, use this command:
+  ```bash
+  mvn test
